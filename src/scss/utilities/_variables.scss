@@ -1,0 +1,67 @@
+// FONT FAMILIES
+$font-families: (
+  body: ('Barlow', sans-serif),
+  heading: ('Fraunces', serif),
+);
+
+// FONT SIZES
+$font-sizes: (
+  mobile: (
+    body: 18px,
+    body-xs: 14px,
+    body-sm: 16px,
+    heading: 32px,
+    heading-xs: 16x,
+    heading-sm: 28px,
+    heading-xl: 40px,
+    button: 15px,
+  ),
+  desktop: (
+    body: 18px,
+    body-xs: 14px,
+    body-sm: 16px,
+    heading: 40px,
+    heading-xs: 20px,
+    heading-sm: 28px,
+    heading-xl: 56px,
+    button: 15px,
+  ),
+);
+
+// COLORS
+$colors: (
+  white: #FFFFFF,
+  blue: #4BBEF2,
+  yellow: #FAD400,
+  red: #FE7766,
+  dark: #24303E,
+  light-grey: #A7AAAD,
+  dark-grey: #808397,
+  very-dard-grey: #5B636D,
+  very-dark-green: #24554A,
+  dark-green: #3E7467,
+  light-green: #458D7E,
+  very-dark-blue: #052C3B,
+  dark-blue: #19536C,
+);
+
+// SPACINGS
+$spacings: ();
+
+@for $i from 0 through 32 {
+  $map: ();
+  $map: map-merge($spacings, (
+    $i: #{6 * $i}px
+  ));
+  $spacings: map-merge($spacings, $map);
+}
+
+// CONTAINERS
+$container-width: 1156px;
+
+// BREAKPOINTS
+$breakpoints: (
+  mobile: 375px,
+  tablet: 768px,
+  desktop: 1024px,
+);

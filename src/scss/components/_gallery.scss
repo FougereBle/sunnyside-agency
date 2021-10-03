@@ -1,0 +1,11 @@
+.gallery {
+  &__image {
+    min-height: 188px;
+    background-size: cover;
+    background-position: bottom;
+
+    @include desktop {
+      min-height: 447px;
+    }
+  }
+}

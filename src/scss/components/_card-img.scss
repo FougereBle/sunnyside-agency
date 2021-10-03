@@ -1,0 +1,30 @@
+.card-img {
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  padding:  map-get($spacings, 8) map-get($spacings, 4);
+
+  &__title {
+    font-family: map-get($font-families, heading);
+    font-weight: 900;
+    font-size: map-get(map-get($font-sizes, mobile), heading-sm);
+    margin-bottom: map-get($spacings, 4);
+
+    @include desktop {
+      font-size: map-get(map-get($font-sizes, desktop), heading-sm);
+    }
+  }
+
+  &--green {
+    color: map-get($colors, very-dark-green);
+  }
+
+  &--blue {
+    color: map-get($colors, very-dark-blue);
+  }
+}

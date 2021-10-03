@@ -1,0 +1,49 @@
+.testimonials {
+  padding: map-get($spacings, 11) 0;
+
+  &__title {
+    font-size: map-get(map-get($font-sizes, mobile), body-sm);
+    font-family: map-get($font-families, heading);
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 19px;
+    letter-spacing: 4px;
+    color: map-get($colors, light-grey);
+  }
+
+  .testimonial {
+    margin-top: map-get($spacings, 11);
+    text-align: center;
+
+    @include desktop {
+      padding-left: map-get($spacings, 2);
+      padding-right: map-get($spacings, 2);
+    }
+
+    &__picture {
+      border-radius: 100px;
+      width: 72px;
+      height: 72px;
+      margin-bottom: map-get($spacings, 5);
+    }
+
+    &__text {
+      font-weight: 600;
+      line-height: 32px;
+      margin-bottom: map-get($spacings, 5);
+    }
+
+    &__name {
+      font-family: map-get($font-families, heading);
+      line-height: 22px;
+      color: map-get($colors, dark);
+      margin-bottom: map-get($spacings, 1);
+    }
+
+    &__job {
+      font-size: map-get(map-get($font-sizes, mobile), body-xs);
+      line-height: 25px;
+    }
+  }
+}

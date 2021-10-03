@@ -1,0 +1,33 @@
+.hero {
+  min-height: 100vh;
+  background-image: url("~/src/images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: map-get($colors, white);
+  padding: map-get($spacings, 4);
+  text-align: center;
+  box-sizing: border-box;
+
+  &__title {
+    font-family: map-get($font-families, heading);
+    font-size: map-get(map-get($font-sizes, mobile), heading-xl);
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 49px;
+    letter-spacing: 6.25px;
+    margin-bottom: map-get($spacings, 8);
+
+    @include desktop {
+      font-size: map-get(map-get($font-sizes, desktop), heading-xl);
+    }
+  }
+
+  &__button {
+    border: none;
+    background: transparent;
+  }
+}

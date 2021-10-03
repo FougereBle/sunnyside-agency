@@ -6,9 +6,12 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "deploy": "gh-pages -d dist"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "devDependencies": {
     "css-loader": "^6.3.0",
     "html-loader": "^2.1.2",
